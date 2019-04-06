@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <ImageView
+        android:layout_width="207dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:id="@+id/btn_historico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Histórico"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+    <LinearLayout
+        android:id="@+id/container_labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="12"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+
+        <LinearLayout
+            android:id="@+id/container_time1"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:text="NÓS"/>
+
+            <TextView
+                android:id="@+id/lbl_pontos_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="65sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="11"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_plus_time1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/btn_plus"/>
+
+                <ImageButton
+                    android:id="@+id/btn_less_time1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/btn_less"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_time2"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:text="ELES"/>
+            <TextView
+                android:id="@+id/lbl_pontos_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="65sp"
+                android:text="3"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_plus_time2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/btn_plus"/>
+
+                <ImageButton
+                    android:id="@+id/btn_less_time2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/btn_less"/>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+</LinearLayout>
